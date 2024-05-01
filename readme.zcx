@@ -1,0 +1,45 @@
+'''
+Chengxin's own python/shell scripts repository.
+All scripts are licensed under LGPL v2+.
+All scripts can be directly called by command line.
+When launched without argument, a short documentation will be displayed.
+All python scripts are importable by python.
+'''
+
+#### sequence parsing ####
+fasta2pfam.py      # convert FASTA file to Pfam file
+pfam2fasta.py      # convert Pfam file to FASTA file
+NWalign.py         # global sequence alignment
+seq_similarity.py  # sequence identity matrix for MSA
+split_fasta.py     # split multi sequence FASTA into one sequence FASTA
+fasta2len.py       # list the length of entries in fasta sequence
+
+#### structure parsing ####
+contact_pdb.py     # calculate residue contacts
+reindex_pdb.py     # renumber residue number of PDB file
+fixMSE.py          # fix MSE and other nonstandard residues in PDB
+fetch.py,fetch.sh  # fetch PDB from RCSB PDB according to PDB id, Uniprot 
+                   # accession, or Pfam family id
+reptra2pdb.py      # convert I-TASSER format decoy file rep*.tra*.bz2 to PDB
+superpose.py       # superpose two structures
+initdat2pdb.py     # convert LOMETS threading result init.dat to PDB
+HomologyModelling.py # homology modelling by MODELLER
+strip_sidechain.py # remove side
+DomainParser.py    # partition a PDB chain into domains
+split_uniprot.py   # partition a PDB file into different uniprot ID
+pdb2fasta.py       # convert PDB file to fasta file
+xvg2png.py         # plot gromacs xvf file to png image
+batch_pdb_image.py # gallery view of many pdb files
+
+#### GO parsing ####
+obo2csv.py         # parsing obo format GO defination file
+
+#### regular expression ####
+grep-GO.sh         # uniquely grep all GO terms in plain text
+grep-uniprot.sh    # uniquely grep all uniprot accession in plain text
+
+#### mathematics ultility ####
+getPvalue.py       # calculate Student's T test p-value
+
+#### system ultility ####
+read_mail.py       # read system mail
